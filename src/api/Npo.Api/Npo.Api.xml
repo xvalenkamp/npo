@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Npo.Api</name>
+    </assembly>
+    <members>
+        <member name="T:Npo.Api.ApiVersionConfig">
+            <summary>
+            ApiVersionConfig
+            </summary>
+        </member>
+        <member name="M:Npo.Api.ApiVersionConfig.AddVersioning(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Add versioning to builder services
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Npo.Api.ControllerConfig">
+            <summary>
+            ControllerConfig
+            </summary>
+        </member>
+        <member name="M:Npo.Api.ControllerConfig.AddControllers(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Add Controllers to builder, setup serialization
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Npo.Api.CorsConfig">
+            <summary>
+            CorsConfig
+            </summary>
+        </member>
+        <member name="M:Npo.Api.CorsConfig.AddCors(Microsoft.AspNetCore.Builder.WebApplicationBuilder,System.String)">
+            <summary>
+            Add cors if environment is Development
+            </summary>
+            <param name="builder"></param>
+            <param name="policyName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Npo.Api.DependencyInjectionConfig">
+            <summary>
+            DependencyInjectionConfig
+            </summary>
+        </member>
+        <member name="M:Npo.Api.DependencyInjectionConfig.AddDependencyInjection(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Add Dependency Injection
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="T:Npo.Api.SwaggerConfig">
+            <summary>
+            SwaggerConfig
+            </summary>
+        </member>
+        <member name="M:Npo.Api.SwaggerConfig.AddSwagger(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Add swagger configuration to builder services
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:Npo.Api.SwaggerConfig.SwaggerServiceOptions">
+            <summary>
+            Create swaggerGenOptions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Npo.Api.SwaggerConfig.SwaggerUIOptions">
+            <summary>
+            Configure Swagger UI Options
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Npo.Api.Controllers.v1.CameraController">
+            <summary>
+            CameraController
+            </summary>
+        </member>
+        <member name="M:Npo.Api.Controllers.v1.CameraController.#ctor(Microsoft.Extensions.Logging.ILogger{Npo.Api.Controllers.v1.CameraController},Npo.Services.v1.ICameraService)">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Npo.Api.Controllers.v1.CameraController.GetCameras(Npo.Dtos.v1.Filters.CameraFilter)">
+            <summary>
+            Get Cameras
+            </summary>
+            <param name="cameraFilter"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
